@@ -1,3 +1,4 @@
+
 # Exercise 1: Basic Input
 # Ask the user for their name and greet them
 print("=== Exercise 1: Basic Input ===")
@@ -19,7 +20,7 @@ first_name = input("Enter your first name: ")
 last_name = input("Enter your last name: ")
 birth_year = int(input("Enter your birth year: "))
 
-current_year = 2025
+current_year = 2026
 calculated_age = current_year - birth_year
 
 print("Full name:", first_name + " " + last_name)
@@ -103,7 +104,7 @@ print("\n=== Exercise 8: Practice Problems ===")
 # Problem 1: Ask for user's name and age, then calculate birth year
 user_name = input("What's your name? ")
 user_age = int(input("How old are you? "))
-birth_year = 2024 - user_age
+birth_year = 2026 - user_age
 print(user_name + ", you were born in approximately", birth_year)
 
 # Problem 2: Convert temperature from Celsius to Fahrenheit
@@ -116,3 +117,4 @@ length = float(input("Enter rectangle length: "))
 width = float(input("Enter rectangle width: "))
 area = length * width
 print("The area of a rectangle with length", length, "and width", width, "is", area)
+
