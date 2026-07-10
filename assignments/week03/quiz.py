@@ -1,3 +1,4 @@
+'''
 # Complete this program to classify people by age
 age = int(input("Enter age: "))
 
@@ -8,9 +9,19 @@ age = int(input("Enter age: "))
 # 60+: Senior
 
 # Your code here:
+if age >= 0 and age <= 12:
+    print("You are Child")
+elif age >= 13 and age <= 19:
+    print("You are Teenager")
+elif age >= 20 and age <= 59:
+    print("You are Adult")
+elif age >= 60:
+    print("You are Senior")
+else:
+    print("error")
 
-
-
+print()
+'''
 # Complete this ATM simulation
 balance = 1000
 pin = "1234"
@@ -28,6 +39,37 @@ if entered_pin == pin:
         
         # Complete the menu logic here
         # Your code here:
+
+        if choice == '1':
+            print(f"Now you have Balance : {balance}")
+
+        elif choice == '2':
+            while True:
+                withdraw = int(input("How many yuo want to withdraw :"))
+                if withdraw >= balance:
+                    print("There isn't enough to withdraw")
+
+                    ans = input("want to try again (y/n) :")
+
+                    if ans == 'y' or 'Y':
+                        continue
+                    elif ans == 'n' or 'N':
+                        break
+                    else:
+                        print("error")
+                        continue
+            balance -= withdraw
+            print(f"Now you have balance {balance}")
+            break
+
+        elif choice == '3':
+            Deposit = int(input("How many yuo want to Deposit :"))
+            balance += Deposit
+
+        elif choice == '4':
+            break
+        else:
+            print("error")
         
 else:
     print("Invalid PIN")
