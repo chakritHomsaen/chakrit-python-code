@@ -45,22 +45,22 @@ if entered_pin == pin:
 
         elif choice == '2':
             while True:
-                withdraw = int(input("How many yuo want to withdraw :"))
-                if withdraw >= balance:
+                withdraw = int(input("How many you want to withdraw :"))
+                if withdraw > balance:
                     print("There isn't enough to withdraw")
 
-                    ans = input("want to try again (y/n) :")
+                    ans = input("want to try again (y/n) :").lower()
 
-                    if ans == 'y' or 'Y':
+                    if ans == 'y':
                         continue
-                    elif ans == 'n' or 'N':
+                    elif ans == 'n':
                         break
                     else:
                         print("error")
                         continue
-            balance -= withdraw
-            print(f"Now you have balance {balance}")
-            break
+                balance -= withdraw
+                print(f"Now you have balance {balance}")
+                break
 
         elif choice == '3':
             Deposit = int(input("How many yuo want to Deposit :"))
