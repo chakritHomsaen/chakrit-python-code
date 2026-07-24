@@ -1,4 +1,4 @@
-'''
+
 # Complete this program to classify people by age
 age = int(input("Enter age: "))
 
@@ -21,7 +21,7 @@ else:
     print("error")
 
 print()
-'''
+
 # Complete this ATM simulation
 balance = 1000
 pin = "1234"
@@ -30,11 +30,14 @@ entered_pin = input("Enter PIN: ")
 if entered_pin == pin:
     print("PIN accepted")
     while True:
+        print("=" * 50)
         print("\n1. Check Balance")
         print("2. Withdraw")
         print("3. Deposit") 
         print("4. Exit")
-        
+        print()
+        print("=" * 50)
+
         choice = input("Choose option: ")
         
         # Complete the menu logic here
@@ -48,7 +51,7 @@ if entered_pin == pin:
                 withdraw = int(input("How many you want to withdraw :"))
                 if withdraw > balance:
                     print("There isn't enough to withdraw")
-
+                    print(f"You have balance {balance}")
                     ans = input("want to try again (y/n) :").lower()
 
                     if ans == 'y':
@@ -67,6 +70,8 @@ if entered_pin == pin:
             balance += Deposit
 
         elif choice == '4':
+            print("End programe")
+            print("=" * 50)
             break
         else:
             print("error")
