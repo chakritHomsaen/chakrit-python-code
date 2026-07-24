@@ -49,7 +49,10 @@ if entered_pin == pin:
         elif choice == '2':
             while True:
                 withdraw = int(input("How many you want to withdraw :"))
-                if withdraw > balance:
+                if withdraw < 0:
+                    print("ถอนติดลบไม่ได้")
+                    
+                if withdraw > balance or withdraw < 0:
                     print("There isn't enough to withdraw")
                     print(f"You have balance {balance}")
                     ans = input("want to try again (y/n) :").lower()
@@ -67,6 +70,9 @@ if entered_pin == pin:
 
         elif choice == '3':
             Deposit = int(input("How many yuo want to Deposit :"))
+            if Deposit < 0:
+                print("ฝากติดลบไม่ได้")
+                continue
             balance += Deposit
 
         elif choice == '4':
