@@ -1,0 +1,22 @@
+def calculate_rectangle_area(length, width):
+    """Calculates and displays rectangle area"""
+    area = length * width
+    print(f"Rectangle with length {length} and width {width}")
+    print(f"Area = {length} × {width} = {area}")
+    print()
+
+print("Calculating rectangle areas:")
+calculate_rectangle_area(5, 3)
+calculate_rectangle_area(10, 7)
+
+def calculate_triangle_area(base, height):
+    """Calculates and displays Triangle area"""
+    area = 0.5 * base * height
+    return area, base, height
+
+print("Calculating Triangle areas:")
+area, base, height = calculate_triangle_area(5, 3)
+
+print(f"Triangle with base {base} and height {height}")
+print(f"Area = 0.5 * {base} × {height} = {area}")
+print()

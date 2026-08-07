@@ -117,17 +117,25 @@ result = multiply(4, 5) + square(3)
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
 print()
 
+#จงหาผลรันโปรแกรม Example 3 ด้านบน
+"""
+Using return values in expressions:
+multiply(4, 5) + square(3) = 20 + 9 = 29
+
+"""
+
 # =============================================================================
 # PART 4: DEFAULT PARAMETERS
 # =============================================================================
 print("\n=== PART 4: DEFAULT PARAMETERS ===")
 
 # Example 1: Function with default parameter
-def greet_with_title(name, title="Mr./Ms."):
+def greet_with_title(name="Yo", title="Mr./Ms."):
     """Greets person with optional title"""
     print(f"Hello, {title} {name}!")
 
 print("Using default parameters:")
+greet_with_title()
 greet_with_title("Smith")  # Uses default title
 greet_with_title("Johnson", "Dr.")  # Custom title
 greet_with_title("Brown", "Prof.")  # Custom title
