@@ -32,7 +32,7 @@ def create_user_profile(username, age=18, premium=False):
     # Your Problem 3 solution
     status = "Premium User" if premium else "Standard User"
 
-    return username, age, status
+    return f"{username} (age: {age}) {status}"
 
 
 print(create_user_profile("Jo", 20))
