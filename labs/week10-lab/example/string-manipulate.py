@@ -50,9 +50,9 @@ print(f"w = fruit[n-1] = {w}")  # 'n'
 
 # Show indexing diagram
 print("\nIndexing visualization:")
-print("b a n a n a")
-print("0 1 2 3 4 5")
-print("-6-5-4-3-2-1")
+print(" b  a  n  a  n  a")
+print(" 0  1  2  3  4  5")
+print("-6 -5 -4 -3 -2 -1")
 
 # ===========================
 # 4. TRAVERSING STRINGS
@@ -67,6 +67,7 @@ for i, char in enumerate(message):
     print(f"message[{i}] = {char}")
 
 print("\nMethod 2: Manual indexing")
+
 index = 0
 for char in message:
     print(f"message[{index}] = {char}")
@@ -202,31 +203,32 @@ text = "welcome to the world of python"
 
 # Case methods
 print(f"Original: {text}")
-print(f"Upper: {text.upper()}")
-print(f"Lower: {text.lower()}")
-print(f"Title: {text.title()}")
-print(f"Capitalize: {text.capitalize()}")
+print(f"Upper: {text.upper()}") #up all
+print(f"Lower: {text.lower()}") #low all
+print(f"Title: {text.title()}") #front all up
+print(f"Capitalize: {text.capitalize()}") #front 1 up
+#Data text = "welcome to the world of python" same first
 
 # Search methods
-print(f"Find 'world': {text.find('world')}")
-print(f"Count 'o': {text.count('o')}")
-print(f"Starts with 'welcome': {text.startswith('welcome')}")
-print(f"Ends with 'python': {text.endswith('python')}")
+print(f"Find 'world': {text.find('world')}") #index of 'world' in text
+print(f"Count 'o': {text.count('o')}") #num o in text
+print(f"Starts with 'welcome': {text.startswith('welcome')}") # chake fornt
+print(f"Ends with 'python': {text.endswith('python')}") #chake end
 
 # Modification methods
-print(f"Replace 'python' with 'java': {text.replace('python', 'java')}")
-words = text.split()
-print(f"Split into words: {words}")
-print(f"Join with '-': {'-'.join(words)}")
+print(f"Replace 'python' with 'java': {text.replace('python', 'java')}") 
+words = text.split() #แยกคำเป็นลิส
+print(f"Split into words: {words}") 
+print(f"Join with '-': {'-'.join(words)}") #ต่อกันโดยมีตัวขั้น
 
 # Validation methods
 test_str = "Hello123"
 print(f"\nValidation methods for '{test_str}':")
-print(f"isalnum(): {test_str.isalnum()}")
-print(f"isalpha(): {test_str.isalpha()}")
-print(f"isdigit(): {test_str.isdigit()}")
-print(f"isupper(): {test_str.isupper()}")
-print(f"islower(): {test_str.islower()}")
+print(f"isalnum(): {test_str.isalnum()}") #เป็น ตัวอักษร กับ เลข มั้ย
+print(f"isalpha(): {test_str.isalpha()}") #เป็น ตัวอักษรหมด มั้ย
+print(f"isdigit(): {test_str.isdigit()}") #เป็น เลขหมด มั้ย
+print(f"isupper(): {test_str.isupper()}") #เป็น ตัวใหญ่หมด มั้ย
+print(f"islower(): {test_str.islower()}") #เป็น ตัวเล็กหมด มั้ย
 
 # ===========================
 # 13. ORD() AND CHR() FUNCTIONS
@@ -234,8 +236,8 @@ print(f"islower(): {test_str.islower()}")
 
 print("\n=== ORD() AND CHR() FUNCTIONS ===")
 ch = 'R'
-print(f"ord('{ch}') = {ord(ch)}")
-print(f"chr(82) = {chr(82)}")
+print(f"ord('{ch}') = {ord(ch)}") #อักขระ เป็น เลข
+print(f"chr(82) = {chr(82)}")     #เลข   เป็น อักขระ
 
 # ASCII table example
 print("\nASCII values for A-Z:")
