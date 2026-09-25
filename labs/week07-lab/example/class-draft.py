@@ -7,10 +7,11 @@ class ClassName:
     
     def method_name(self):
         # Instance method
-        return 
+        self.attribute += 6700
+        return self.attribute
 
 
-myObj = ClassName(88)
+myObj = ClassName(67)
 print(myObj.attribute)
 resultFromMethod = myObj.method_name()
 print(resultFromMethod)
