@@ -1,4 +1,3 @@
-
 # Exercise 1: Basic Input
 # Ask the user for their name and greet them
 print("=== Exercise 1: Basic Input ===")

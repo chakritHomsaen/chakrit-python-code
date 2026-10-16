@@ -67,7 +67,6 @@ for i, char in enumerate(message):
     print(f"message[{i}] = {char}")
 
 print("\nMethod 2: Manual indexing")
-
 index = 0
 for char in message:
     print(f"message[{index}] = {char}")

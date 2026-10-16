@@ -1,4 +1,3 @@
-
 # Complete this program to classify people by age
 age = int(input("Enter age: "))
 
